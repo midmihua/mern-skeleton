@@ -1,0 +1,12 @@
+@import 'shared/variables.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700');
+
+body {
+  font-family: $font-family;
+  color: $primary-text;
+
+  h1, h2, h3 {
+    font-family: $font-family;
+  }
+}

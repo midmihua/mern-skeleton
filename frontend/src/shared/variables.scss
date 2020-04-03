@@ -1,0 +1,192 @@
+// ---------- FONTS  ---------- //
+
+$font-family: 'Fira Sans', sans-serif;
+
+
+// ---------- COLORS  ---------- //
+//Common
+$green: #66dd77;
+$blue: #374785;
+$white: #ffffff;
+
+// Text
+$primary-text: #333333;
+$disabled-text: #757575;
+
+//Buttons
+
+
+// ---------- MIXINS  ---------- //
+
+// Common
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-radius-detailed($tl, $tr, $br, $bl) {
+  -webkit-border-radius: $tl $tr $br $bl;
+  -moz-border-radius: $tl $tr $br $bl;
+  -ms-border-radius: $tl $tr $br $bl;
+  border-radius: $tl $tr $br $bl;
+}
+
+@mixin box-shadow($horizontal, $vertical, $blur, $color) {
+  -webkit-box-shadow: $horizontal $vertical $blur $color;
+  -moz-box-shadow: $horizontal $vertical $blur $color;
+  box-shadow: $horizontal $vertical $blur $color;
+}
+
+@mixin box-shadow-none {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+@mixin transition($property, $time, $function) {
+  -webkit-transition: $property $time $function;
+  -moz-transition: $property $time $function;
+  -ms-transition: $property $time $function;
+  -o-transition: $property $time $function;
+  transition:  $property $time $function;
+}
+
+
+// Flex
+@mixin display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  -o-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin align-items-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin align-items-start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@mixin align-items-end {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@mixin align-items-stretch {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@mixin align-content-stretch {
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+
+@mixin jc-flex-start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@mixin jc-flex-end {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@mixin jc-space-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin jc-space-around {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@mixin jc-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin flex($flex-style) {
+  -webkit-flex: $flex-style;
+  -ms-flex: $flex-style;
+  flex: $flex-style;
+}
+
+@mixin order($value) {
+  -webkit-box-ordinal-group: $value;
+  -webkit-order: $value;
+  -ms-flex-order: $value;
+  order: $value;
+}
+
+@mixin flex-direction($value) {
+  -webkit-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin  align-self-start {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+@mixin  align-self-end {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+@mixin  align-self-center {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@mixin align-items-end {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end
+}
